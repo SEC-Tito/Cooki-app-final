@@ -1,0 +1,72 @@
+<ion-content class="ion-padding">
+  <ion-img src="assets/LogoCK.png" class="logo" [routerLink]="['/home']"></ion-img>
+  
+ 
+   
+      <ion-col size="6">
+        <ion-card class="card1">
+          <img alt="Silhouette of mountains" src="https://i.pinimg.com/564x/ab/41/75/ab41754e27264e92b0d05b9990a1a25a.jpg" />
+          
+          <ion-card-header class="titulo">
+            <ion-card-title>which is the LITLE CAT?🐕</ion-card-title>
+            
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+
+      <ion-card class="ionpadre"color="medium">
+        <ion-card-content>
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen1, 'class-name2': estadoimagen1 }">
+                <ion-button (click)="cambiarimagen1(estadoimagen1 !== undefined ? !estadoimagen1 : false)"(click)="presentSimpleAlert()">
+                  <ion-card  class="ionimg">
+                    <img alt="Silhouette of mountains" class="juan" src="https://i.pinimg.com/564x/70/25/f7/7025f7d12809d0b3f1e333b8e9b596ea.jpg" />
+                  </ion-card>
+                </ion-button>
+                </div>
+              </ion-col>
+        
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen2, 'class-name2': estadoimagen2 }">
+                <ion-button (click)="cambiarimagen2(estadoimagen2 !== undefined ? !estadoimagen2 : false)" (click)="presentSimpleAlert()">
+                  <ion-card class="ionimg">
+                    <img alt="Silhouette of mountains" class="juan"src="https://i.pinimg.com/564x/36/3c/68/363c680403ce153c5afadf4ff4d9fd2e.jpg" />
+                  </ion-card>
+                </ion-button>
+              </div>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen3, 'class-name2': estadoimagen3 }">
+                <ion-button (click)="cambiarimagen3(estadoimagen3 !== undefined ? !estadoimagen3 : false)" (click)="presentSimpleAlert()">
+                  <ion-card class="ionimg">
+                    <img alt="Silhouette of mountains" class="juan"  src="https://i.pinimg.com/564x/d1/6c/5d/d16c5d3b8865ddb9e5aebb661d04a775.jpg" /> </ion-card>
+                </ion-button>
+                </div>
+              </ion-col>
+        
+              <ion-col size="6">
+                <div [ngClass]="{ 'class-name1': !estadoimagen4, 'class-name2': estadoimagen4 }">
+                 <ion-button (click)="cambiarimagen4(estadoimagen4 !== undefined ? !estadoimagen4 : false)" (click)="presentAlert('')">
+                  <ion-card class="ionimg">
+                    <img alt="Silhouette of mountains"class="juan"  src="https://i.pinimg.com/564x/ab/41/75/ab41754e27264e92b0d05b9990a1a25a.jpg" /> </ion-card>
+                </ion-button>
+                </div>
+              </ion-col>
+            </ion-row>
+
+
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+      
+      
+    
+   
+      <ion-button  class="boton1" (click)="confirmarRedireccion()">Go to Menu 📃</ion-button>
+</ion-content>

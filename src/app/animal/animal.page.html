@@ -1,0 +1,122 @@
+<ion-content [fullscreen]="true">
+  <ion-img src="assets/LogoCK.png" class="logo" [routerLink]="['/home']"></ion-img>   
+
+
+<div class="Contenedor-padre">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="juan">
+            <div class="box-container">
+              <div class="box1"></div>
+              ➕
+              <div class="box2"></div>  
+              <div class="lista">
+                <ion-list>
+                  <ion-item>
+                    <ion-select aria-label="Color" interface="action-sheet" placeholder="What Color? ">
+                      <ion-select-option value="Red1">Red ⭕</ion-select-option>
+                      <ion-select-option value="Blue1">Blue 🔵</ion-select-option>
+                      <ion-select-option value="Pink1">Pink 🐷</ion-select-option>
+                      <ion-select-option value="Sky1">Sky 🌐</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+             
+              </div>
+            </div>
+            
+            <p class="texto">BLUE + WHITE = ?</p>
+            
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="juan">
+            <div class="box-container">
+              <div class="box3"></div>
+              ➕
+              <div class="box4"></div>
+              <div class="lista">
+                <ion-list>
+                  <ion-item>
+                    <ion-select aria-label="Color" interface="action-sheet" placeholder="What Color? ">
+                      <ion-select-option value="Green2">Green 🍏</ion-select-option>
+                      <ion-select-option value="Blue2">Blue 🔵</ion-select-option>
+                      <ion-select-option value="Yellow2">Yellow 🍋</ion-select-option>
+                      <ion-select-option value="Bronw2">Bronw 🍫</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+             
+              </div>
+            </div>
+            <p class="texto">RED + WHITE = ?
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="juan">
+            <div class="box-container">
+              <div class="box5"></div>
+              ➕
+              <div class="box6"></div>
+              <div class="lista">
+                <ion-list>
+                  <ion-item>
+                    <ion-select aria-label="Color" interface="action-sheet" placeholder="What Color? ">
+                      <ion-select-option value="Purple3">Purple 🍇</ion-select-option>
+                      <ion-select-option value="Black3">Black 🎱</ion-select-option>
+                      <ion-select-option value="Red3">Red ⭕</ion-select-option>
+                      <ion-select-option value="Orange3">Orange 🍊</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+             
+              </div>
+            </div>
+            <p class="texto">RED+YELLOW = ?</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <ion-card-content class="juan">
+            <div class="box-container">
+              <div class="box7"></div>
+              ➕
+              <div class="box8"></div>
+              <div class="lista">
+                <ion-list>
+                  <ion-item>
+                    <ion-select aria-label="Color" interface="action-sheet" placeholder="What Color? ">
+                      <ion-select-option value="White4">White 🐼</ion-select-option>
+                      <ion-select-option value="Orange4">Orange 🍊</ion-select-option>
+                      <ion-select-option value="Purple4">Purple 🍇</ion-select-option>
+                      <ion-select-option value="Pink4">Pink 🦑</ion-select-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-list>
+             
+              </div>
+            </div>
+            <p class="texto">RED            +           BLUE = ? </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+
+  
+    <div class="divboton">
+      <button class="button-Home" [routerLink]="['/menu']">Go to Menu 📃</button>
+    </div>
+    <ion-button class="verification-button" (click)="presentAlert()">Verificar ✔️</ion-button>
+</ion-content>
